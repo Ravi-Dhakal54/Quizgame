@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path System</title>
+    <link rel="stylesheet" href="css_folder/app.css">
+    <link rel="stylesheet" href="css_folder/header.css">
+    <link rel="stylesheet" href="css_folder/footer.css">
+    <link rel="stylesheet" href="css_folder/levelSection.css">
+    <link rel="stylesheet" href="css_folder/Mascot.css">
+</head>
+<body>
+     <!-- Background Image -->
+    <img id="back" src="image folder/background-image.jpg" alt="background">
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <!-- Logo -->
+        <div class="logo"><a href="landing.html"><img src="image folder/guhuza.png" alt="Guhuza logo"></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="https://guhuza.com/help">Help</a></li>
+            <li><a href="#" id="logoutLink">Logout</a></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger" onclick="toggleMenu()" onKeyDown="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="nav-sidebar">
+        <div class="close-btn">×</div>
+        <div class="nav-header" id="navHeader">Learning Paths</div>
+        <div id="levelsContainer"></div>
+    </nav>
+
+    <div class="hamburger1">☰</div>
+
+
+    <!-- Logout Popup Screen -->
+    <div id="logoutPopup" class="logout-popup">
+        <div class="logout-popup-content">
+            <h1>Logout Confirmation</h1>
+            <div class="logout-popup-body">
+                <div class="mascot">
+                    <img src="image folder/Guzuha-01-removebg-preview.png" alt="Mascot" class="mascot">
+                </div>
+                <div class="logout-text">
+                    <p>Are you sure you want to log out?</p>
+                    <div class="logout-buttons">
+                        <button id="confirmLogout" class="button">Yes, Logout</button>
+                        <button id="cancelLogout" class="button cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="path-card beginner" id="beginnerCard">
+                <h2>Beginner Path</h2>
+                <p>Start your learning journey with fundamental concepts and essential skill development. Perfect for new learners.</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="beginnerProgress"></div>
+                </div>
+            </div>
+
+            <div class="path-card intermediate" id="intermediateCard">
+                <h2>Intermediate Path</h2>
+                <p>Build practical skills and solve complex problems. Ideal for those with basic experience looking to advance.</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="intermediateProgress"></div>
+                </div>
+            </div>
+
+            <div class="path-card advanced" id="advancedCard">
+                <h2>Advanced Path</h2>
+                <p>Master expert-level techniques and achieve professional mastery. Designed for experienced learners.</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="advancedProgress"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="logo-section">
+            <div class="logo"><img src="image folder/image 1.png" alt="Guhuza"></div>
+            <div>Copyright ©2025 Guhuza. v3.4.4</div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/company/guhuza/"><img src="image folder/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/Guhuza#"><img src="image folder/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fguhuza_"><img src="image folder/Vector.png" alt="X"></a></li>
+            <li><a href="https://www.instagram.com/guhuza_/"><img src="image folder/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=q8xWi5LYa8E"><img src="image folder/youtube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.tiktok.com/@guhuza"><img src="image folder/tiktok.png" alt="TikTok"></a></li>
+            <li><a href="https://open.spotify.com/show/4jQy8DF6ut5lHxpYMjKxA2?si=TdmtJk9vSXWivspTdHqQOQ&dl_branch=1&nd=1"><img src="image folder/spotify.png" alt="Spotify"></a></li>
+        </ul>
+    </footer>
+
+    <script src="javascrip folder/hamburger.js"></script>
+    <script src="javascrip folder/levelSelection.js"></script>
+    <script src="javascrip folder/logout.js"></script>
+</body>
+</html>

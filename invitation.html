@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="css_folder/app.css">
+    <link rel="stylesheet" href="css_folder/header.css">
+    <link rel="stylesheet" href="css_folder/footer.css">
+    <link rel="stylesheet" href="css_folder/invitation.css"> 
+</head>
+
+<body>
+    <!-- Background Image -->
+    <img id="back" src="image folder/background-image.jpg" alt="background">
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="image folder/guhuza.png" alt="Guhuza logo"></a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="login.html">Signin</a></li>
+                <li><a href="https://guhuza.com/help">Help</a></li>
+                <li><a href="https://guhuza.com/about-us">About Us</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <button class="hamburger" onclick="toggleMenu()" onKeyDown="toggleMenu()" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="body">
+        <div class="register-container">
+            <h2>Accept Invitation</h2>
+            <form action="/register" method="post">
+                <input type="text" name="username" placeholder="Username" required autofocus>
+                <input type="email" name="email" placeholder="Email" required >
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+                <p>
+                    <input type="checkbox" name="terms" required style="box-shadow: none; width: auto; display: inline;">
+                    I agree to the terms and conditions
+                </p>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-section">
+            <div class="logo"><img src="image folder/image 1.png" alt="Guhuza" style="max-width: 100px;"></div>
+            <div>Copyright ©2025 Guhuza. v3.4.4</div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/company/guhuza/"><img src="image folder/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/Guhuza#"><img src="image folder/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fguhuza_"><img src="image folder/Vector.png" alt="X"></a></li>
+            <li><a href="https://www.instagram.com/guhuza_/"><img src="image folder/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=q8xWi5LYa8E"><img src="image folder/youtube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.tiktok.com/@guhuza"><img src="image folder/tiktok.png" alt="TikTok"></a></li>
+            <li><a href="https://open.spotify.com/show/4jQy8DF6ut5lHxpYMjKxA2?si=TdmtJk9vSXWivspTdHqQOQ&dl_branch=1&nd=1"><img src="image folder/spotify.png" alt="Spotify"></a></li>
+        </ul>
+    </footer>
+
+    <script src="javascrip folder/hamburger.js"></script>
+</body>
+
+</html>

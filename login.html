@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Font Awesome for eye icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css_folder/header.css">
+    <link rel="stylesheet" href="css_folder/footer.css">
+    <link rel="stylesheet" href="css_folder/login.css">
+    <link rel="stylesheet" href="css_folder/app.css">
+</head>
+<body>
+    <img id="back" src="image folder/background-image.jpg" alt="background">
+    <!-- Header / Navigation Bar -->
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo"><a href="index.html"><img src="image folder/guhuza.png" alt="Guhuza logo"></a></div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Signin</a></li>
+            <li><a href="https://guhuza.com/about-us">About Us</a></li>
+            <li><a href="https://guhuza.com/help">Help</a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <button class="hamburger" onclick="toggleMenu()" onkeydown="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="body">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label> <!-- Updated to username -->
+                    <input type="text" id="username" placeholder="Enter username"> <!-- Updated to username -->
+                    <span class="error-message" id="usernameError">Username is required</span> <!-- Updated to username -->
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <button type="button" class="show-password" id="togglePassword" aria-label="Show password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <span class="error-message" id="passwordError">Password is required</span>
+                </div>
+
+                <button type="submit" id="login-button">Login</button>
+                <p>Don't have an account? <a href="signup.html">Log in</a></p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="logo-section">
+            <div class="logo"><img src="image folder/image 1.png" alt="Guhuza Logo" style="max-width: 100px;"></div>
+            <div>Copyright ©2025 Guhuza. v3.4.4</div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/company/guhuza/"><img src="image folder/linkedin.png" alt="LinkedIn" style="width: 24px;"></a></li>
+            <li><a href="https://www.facebook.com/Guhuza#"><img src="image folder/facebook.png" alt="Facebook" style="width: 24px;"></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fguhuza_"><img src="image folder/Vector.png" alt="X (Twitter)" style="width: 24px;"></a></li>
+            <li><a href="https://www.instagram.com/guhuza_/"><img src="image folder/instagram.png" alt="Instagram" style="width: 24px;"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=q8xWi5LYa8E"><img src="image folder/youtube.png" alt="YouTube" style="width: 24px;"></a></li>
+            <li><a href="https://www.tiktok.com/@guhuza"><img src="image folder/tiktok.png" alt="TikTok" style="width: 24px;"></a></li>
+            <li><a href="https://open.spotify.com/show/4jQy8DF6ut5lHxpYMjKxA2?si=TdmtJk9vSXWivspTdHqQOQ&dl_branch=1&nd=1"><img src="image folder/spotify.png" alt="Spotify" style="width: 24px;"></a></li>
+        </ul>
+    </footer>
+
+    <script src="javascrip folder/hamburger.js"></script>
+    <script src="javascrip folder/login.js"></script>
+
+</body>
+</html>

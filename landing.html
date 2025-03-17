@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guhuza Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_folder/app.css">
+    <link rel="stylesheet" href="css_folder/header.css">
+    <link rel="stylesheet" href="css_folder/footer.css">
+    <link rel="stylesheet" href="css_folder/landing.css">
+    <link rel="stylesheet" href="css_folder/Mascot.css">
+</head>
+<body>
+    
+     <!-- Background Image -->
+     <img id="back" src="image folder/background-image.jpg" alt="background">
+
+     <!-- Header / Navigation Bar -->
+     <header class="navbar">
+         <!-- Logo -->
+         <div class="logo"><a href="landing.html"><img src="image folder/guhuza.png" alt="Guhuza logo"></a>
+         </div>
+ 
+         <!-- Navigation Links -->
+         <ul class="nav-links">
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="https://guhuza.com/help">Help</a></li>
+            <li><a href="#" id="logoutLink">Logout</a></li>
+         </ul>
+ 
+         <!-- Hamburger Menu -->
+         <button class="hamburger" onclick="toggleMenu()" onKeyDown="toggleMenu()" aria-label="Toggle navigation menu">
+             <span></span>
+             <span></span>
+             <span></span>
+         </button>
+     </header>
+
+     <!-- Welcome Popup Screen -->
+    <div id="rulesPopup" class="popup">
+        <div class="popup-content">
+            <h1>Welcome to Guhuza Game!</h1>
+            <div class="popup-body">
+                <div class="rules-text">
+                    <h2>How to Play</h2>
+                    <p>Here are the rules to get started:</p>
+                    <ul>
+                        <li>Complete your profile to set your career goals.</li>
+                        <li>Take on skill challenges and earn rewards.</li>
+                        <li>Compete with others and climb the leaderboard.</li>
+                        <li>Connect with top recruiters and showcase your talents.</li>
+                    </ul>
+                    <button id="closePopup" class="button">Got it!</button>
+                </div>
+                <div class="mascot">
+                    <img src="image folder/Guzuha-02-removebg-preview.png" alt="Mascot" class="mascot-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Popup Screen -->
+    <div id="logoutPopup" class="logout-popup">
+        <div class="logout-popup-content">
+            <h1>Logout Confirmation</h1>
+            <div class="logout-popup-body">
+                <div class="mascot">
+                    <img src="image folder/Guzuha-01-removebg-preview.png" alt="Mascot" class="mascot">
+                </div>
+                <div class="logout-text">
+                    <p>Are you sure you want to log out?</p>
+                    <div class="logout-buttons">
+                        <button id="confirmLogout" class="button">Yes, Logout</button>
+                        <button id="cancelLogout" class="button cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="body">
+    <div class="headerr">
+        <h1 id="landingHeading">Guhuza Game</h1>
+        <p>Level up your career through interactive challenges and competitions</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>"Discover Guhuza"</h2>
+            <p>You're now in the game! Ready to compete, level up, and land your dream job?</p>
+            <ul>
+                <li>Start Your Journey, Complete your profile & set your career goals.</li>
+                <li>Compete & Improve, Take on skill challenges & earn rewards.</li>
+                <li>Get Noticed, Connect with top recruiters & showcase your talents.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>How to play?</h2>
+            <p>To start your journey, click the 'Play Now' button below.</p>
+            <ul>
+                <li>Explore Real-World Scenarios, Navigate job-seeking challenges.</li>
+                <li>Apply, Interview & Secure Offers, Prove your skills in a competitive setting.</li>
+                <li>Climb the Leaderboard, Compete with others to land the best job first!</li>
+            </ul>
+            <a href="levelSection.html" class="button">Play Now</a>
+        </div>
+        <div class="card">
+            <h2>Your Progress</h2>
+            <div class="circular-progress">
+                <div class="progress-circle">
+                    <div class="progress-mask"></div>
+                    <span class="progress-percent">0%</span>
+                </div>
+            </div>
+            <div class="progress-text" id="progressText" style="font-size: 16px;">
+                <strong>Let's get started!</strong> Your journey begins now. Take the first step! 🚀
+            </div>
+        </div>
+        <div class="card">
+            <h2>Background Screening</h2>
+            <ul>
+                <li>Verification of Credentials</li>
+                <li>Criminal & Legal Checks</li>
+                <li>Financial & Credit History</li>
+                <li>Enhanced Workplace Security</li>
+            </ul>
+            <a href="https://guhuza.com/employer/background-checks" class="button">Secure Your Hire</a>
+        </div>
+        <div class="card">
+            <h2>Live Interview Practice</h2>
+            <ul>
+                <li>Mock Interviews</li>
+                <li>Industry-Specific Question Banks</li>
+                <li>Feedback & Improvement Tracking</li>
+                <li>Stronger Employer Branding</li>
+            </ul>
+            <a href="https://guhuza.com/employer/live-interviews" class="button">Start Interview Training</a>
+        </div>
+        <div class="card">
+            <h2>Skills Testing</h2>
+            <ul>
+                <li>Objective Assessment</li>
+                <li>Faster Hiring Decisions</li>
+                <li>Improved Job Performance</li>
+                <li>Customized Evaluations</li>
+            </ul>
+            <a href="https://guhuza.com/employer/skills-testing" class="button">Unlock Your Potential</a>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="logo-section">
+            <div class="logo"><img src="image folder/image 1.png" alt="Guhuza"></div>
+            <div>Copyright ©2025 Guhuza. v3.4.4</div>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/company/guhuza/"><img src="image folder/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/Guhuza#"><img src="image folder/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fguhuza_"><img src="image folder/Vector.png" alt="X"></a></li>
+            <li><a href="https://www.instagram.com/guhuza_/"><img src="image folder/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=q8xWi5LYa8E"><img src="image folder/youtube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.tiktok.com/@guhuza"><img src="image folder/tiktok.png" alt="TikTok"></a></li>
+            <li><a href="https://open.spotify.com/show/4jQy8DF6ut5lHxpYMjKxA2?si=TdmtJk9vSXWivspTdHqQOQ&dl_branch=1&nd=1"><img src="image folder/spotify.png" alt="Spotify"></a></li>
+        </ul>
+    </footer>
+
+    <script src="javascrip folder/hamburger.js"></script>
+    <script src="javascrip folder/landing.js"></script>
+    <script src="javascrip folder/logout.js"></script>
+</body>
+</html>
